@@ -135,6 +135,42 @@ deve ser tratado como se fosse.
 
 ---
 
+## 2-B. Achados dos cinco arquivos de base (`PLANO_JOAO`, `REGRAS_RETOMADA`,
+`REVISAO_LACUNAS`, `ROTEIRO_VERSIONAMENTO`, `Sequencia_Notebook_Joao`)
+
+São documentos de fundação e processo (o plano original de 24/07, as regras
+gerais de retomada, uma auditoria de lacunas restrita aos capítulos 1-9, e um
+roteiro técnico de versionamento). Não trazem lacuna nova de Jo 17 — a
+`REVISAO_LACUNAS.md` é explícita: cobre só os caps. 1-9. Mas confirmam ou
+acrescentam três pontos que valem registro:
+
+1. **Lloyd-Jones, *João 17*, são 4 volumes — não um só.**
+   `Sequencia_Notebook_Joao.md` (linha 216) lista a obra entre o que foi
+   **deliberadamente excluído do notebook da Fase 1**, junto com as demais
+   monografias reservadas para entrar "no Deep Research da Fase 2" — ou seja,
+   desde a montagem do corpus em 24-25/07 já se previa que este seria **o**
+   texto reformado dedicado ao capítulo. Isso eleva o peso da frente de
+   expansão §1.3 ("a tradição expositiva reformada dedicada a Jo 17"): 4
+   volumes de exposição pastoral-teológica dão material real para a leitura
+   plena que um relatório de capítulo-entre-21 não pôde esgotar. **Conferir
+   quantos dos 4 volumes efetivamente entraram no corpus do notebook
+   `575759eb`** — o inventário desta sessão não permite saber; é item de
+   auditoria a somar ao §1.1.
+2. **O padrão de cinco itens e as sentinelas gerais, confirmados sem
+   alteração.** `REGRAS_RETOMADA.md` §3 e §6 reproduzem exatamente o que a v1
+   já assumia (nenhuma sentinela específica de Jo 17 aparece nestes
+   documentos além da 17-A já proposta aqui) — não há retrabalho a fazer
+   nesse ponto.
+3. **O projeto-mãe, em 01/08/2026, não tinha remoto git** —
+   `ROTEIRO_VERSIONAMENTO.md` confirma repositório só local, com espelho
+   manual no Google Drive, "fotografia" que não sincroniza sozinha. Isto é
+   relevante para este repositório (`joao17`), que **tem** remoto no GitHub:
+   qualquer arquivo do projeto-mãe que se queira trazer para cá (o
+   `Relatorio_Cap17_Joao.md` já entregue, por exemplo) precisa ser copiado
+   manualmente pelo usuário — não há como este repositório buscá-lo sozinho.
+
+---
+
 ## 3. Plano de execução revisado
 
 | Ordem | Tarefa | Depende de |
