@@ -188,11 +188,21 @@ Firefox; perfil ESR vs. normal), as 4 consultas rodaram contra o notebook
   honestidade, "as fontes disponíveis não permitem afirmar isso com
   segurança" para a página exata. Isso vira pendência de aquisição
   explícita no relatório, não afirmação inventada.
-- **Item 4 de Bultmann (17.3): não preenchido — a consulta falhou.** O
-  arquivo `q4_ancoragem_bultmann.txt` voltou vazio (só o cabeçalho de
-  correspondência do notebook, sem resposta). Fica registrado como
-  pendência a rodar de novo — **não inventei conteúdo para cobrir a
-  falha.**
+- **Item 4 de Bultmann (17.3): ✅ preenchido em 28/09, na segunda
+  rodada** (com o script de retry). Achado honesto e específico:
+  **nenhuma fonte patrística no dossiê aplica a filologia de *yada'* a
+  17.3** nem refuta Bultmann nominalmente — ausência declarada, distinta
+  da recepção patrística geral do capítulo (que existe, mas para outros
+  pontos). O consenso conservador veio com página, mas **fragmentado**:
+  só Carson (edição em português, Vida Nova, pp. 557-558 e p. 27) e,
+  parcialmente, Morris (p. 138 n. 191) combinam as duas pontas do
+  argumento (matriz veterotestamentária + refutação nominal de
+  Bultmann) no mesmo lugar; Ridderbos, Harris/Köstenberger e Rainbow
+  sustentam uma ponta cada, não as duas.
+
+**As três refutações do relatório agora têm os cinco itens preenchidos
+— com conteúdo real do dossiê, ou com ausência explicitamente declarada
+onde o dossiê de fato não tem a fonte.** Entregue como v4.
 
 ⚠️ **Ressalva que se aplica às páginas citadas em ambos os itens 4:**
 vieram da resposta do NotebookLM sobre o dossiê, **não foram conferidas
@@ -201,11 +211,15 @@ contra o PDF original por este repositório** (que não tem acesso a
 antes de publicar como fato — "RAG para descobrir, disco para conferir".
 Marcado no relatório como pendência explícita, não escondido.
 
-**Entregue como v3** (`Relatorio_Cap17_Joao_CORRIGIDO.md`), via
+**Entregue como v4** (`Relatorio_Cap17_Joao_CORRIGIDO.md`), via
 `SendUserFile`. Pendências que sobram, todas fora do alcance deste
-repositório: (a) re-rodar a consulta de `q4`; (b) conferir as páginas
-citadas contra os PDFs; (c) decidir se adquire o comentário integral de
-Bultmann para fechar o item 1 daquela refutação por completo.
+repositório: (a) **rodar `conferir_citacoes_cap17_item4.ps1`** para
+confirmar em disco (`_processados_md\`) as páginas citadas por Carson,
+Morris, Ridderbos, Mounce, Harris/Köstenberger, Thompson, Moloney, e as
+referências de Cirilo/Atanásio/Agostinho/Hilário por numeração clássica
+— entregue, ainda não executado; (b) decidir se adquire o comentário
+integral de Bultmann para fechar o item 1 daquela refutação por
+completo, hoje só descrito por fonte secundária.
 
 **✅ Confirma, em vez de contradizer, os candidatos a expansão já
 propostos em §1.3:** o gênero testamentário é tratado em termos gerais
