@@ -165,6 +165,48 @@ Bultmann, trazer a recepção patrística e o consenso conservador por nome
 repositório não pode fazer. **A reformatação entregue é honesta sobre o
 que ainda falta, não uma correção completa.**
 
+✅ **Consulta ao corpus real feita em 28/09/2026 — o usuário rodou o
+script no NotebookLM e trouxe as 4 respostas.** Depois de resolver 4
+obstáculos técnicos em cadeia (pacote de cookies com nome trocado —
+`rookiepy`, não `rookie-cookies`; certificado SSL interceptado por
+antivírus/proxy, corrigido com `pip-system-certs`; conta errada logada no
+Firefox; perfil ESR vs. normal), as 4 consultas rodaram contra o notebook
+`575759eb`. Resultado, item por item:
+
+- **Item 1 e 4 de 17.5 (heterodoxias): preenchidos com conteúdo real.**
+  Achado relevante: **só a leitura unitária/sociniana tem fonte primária
+  no dossiê** (`Spirit & Truth Fellowship International`, remetendo ao
+  *Racovian Catechism*). Modalismo e arianismo **não têm** — e, no caso do
+  arianismo, isso é em parte **perda histórica** (a *Thalia* de Ário foi
+  destruída por decreto pós-Niceia), não só lacuna de aquisição. A
+  ancoragem tripla (item 4) veio completa: quatro padres nomeados com obra
+  e capítulo (Cirilo, Atanásio, Agostinho, Hilário) e sete comentaristas
+  conservadores com página (Morris p.643, Ridderbos p.547, Carson p.554,
+  Mounce p.358, Harris/Köstenberger p.70, Thompson p.422, Moloney p.172).
+- **Item 1 de Bultmann (17.3): parcialmente preenchido.** O dossiê **não
+  contém o comentário integral de Bultmann** — a consulta devolveu, com
+  honestidade, "as fontes disponíveis não permitem afirmar isso com
+  segurança" para a página exata. Isso vira pendência de aquisição
+  explícita no relatório, não afirmação inventada.
+- **Item 4 de Bultmann (17.3): não preenchido — a consulta falhou.** O
+  arquivo `q4_ancoragem_bultmann.txt` voltou vazio (só o cabeçalho de
+  correspondência do notebook, sem resposta). Fica registrado como
+  pendência a rodar de novo — **não inventei conteúdo para cobrir a
+  falha.**
+
+⚠️ **Ressalva que se aplica às páginas citadas em ambos os itens 4:**
+vieram da resposta do NotebookLM sobre o dossiê, **não foram conferidas
+contra o PDF original por este repositório** (que não tem acesso a
+`biblioteca/`). Isso é exatamente o que a Regra 11 do projeto-mãe exige
+antes de publicar como fato — "RAG para descobrir, disco para conferir".
+Marcado no relatório como pendência explícita, não escondido.
+
+**Entregue como v3** (`Relatorio_Cap17_Joao_CORRIGIDO.md`), via
+`SendUserFile`. Pendências que sobram, todas fora do alcance deste
+repositório: (a) re-rodar a consulta de `q4`; (b) conferir as páginas
+citadas contra os PDFs; (c) decidir se adquire o comentário integral de
+Bultmann para fechar o item 1 daquela refutação por completo.
+
 **✅ Confirma, em vez de contradizer, os candidatos a expansão já
 propostos em §1.3:** o gênero testamentário é tratado em termos gerais
 ("Testamento de Despedida"; Gn 49; Dt 31-33; *Testamento dos XII
