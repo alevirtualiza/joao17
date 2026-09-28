@@ -109,10 +109,15 @@ definição significa "sem objeção séria". Pela própria escala do relatório
 deveriam levar `^HR^`, não `^HP^`. É exatamente o tipo de erro que o
 projeto-mãe já corrigiu antes (rótulo inflado ou mal-aplicado — ver a
 auditoria do Cap. 1 em `CLAUDE.md` §2-B) — aqui não infla a tese, mas
-descreve mal a própria refutação que o texto acabou de fazer. **Correção
-proposta:** trocar `^HP^` por `^HR^` nessa frase, no relatório do
-projeto-mãe (fora do alcance de edição deste repositório — reportar ao
-usuário).
+descreve mal a própria refutação que o texto acabou de fazer.
+
+✅ **Corrigido em 28/09/2026** — `^HP^` trocado por `^HR^` na cópia
+enviada a esta sessão (`.../uploads/.../7d4a63a4-Relatorio_Cap17_Joao.md`).
+⚠️ **Esta correção não se propaga sozinha para o arquivo de origem** no
+projeto-mãe (`Joao-Pesquisa\_entregas\Relatorio_Cap17_Joao.md`, na máquina
+Windows do usuário) — este repositório não tem acesso a ele. O usuário
+precisa aplicar a mesma troca lá, ou reenviar o `.md` de origem para nova
+edição e devolução.
 
 **⚠️ Achado: rigor desigual entre as duas refutações da Regra Zero.** A
 refutação de 17.20-21 (ecumenismo) enumera os cinco itens explicitamente
