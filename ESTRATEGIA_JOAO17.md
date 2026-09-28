@@ -113,11 +113,16 @@ descreve mal a própria refutação que o texto acabou de fazer.
 
 ✅ **Corrigido em 28/09/2026** — `^HP^` trocado por `^HR^` na cópia
 enviada a esta sessão (`.../uploads/.../7d4a63a4-Relatorio_Cap17_Joao.md`).
-⚠️ **Esta correção não se propaga sozinha para o arquivo de origem** no
-projeto-mãe (`Joao-Pesquisa\_entregas\Relatorio_Cap17_Joao.md`, na máquina
-Windows do usuário) — este repositório não tem acesso a ele. O usuário
-precisa aplicar a mesma troca lá, ou reenviar o `.md` de origem para nova
-edição e devolução.
+✅ **Fechado em 28/09/2026** — o usuário reenviou o `.md` de origem;
+corrigido de novo (o upload chegou sem a edição anterior, como esperado —
+uploads não se sincronizam entre si) e devolvido via `SendUserFile` como
+`Relatorio_Cap17_Joao_CORRIGIDO.md`, pronto para substituir o arquivo em
+`Joao-Pesquisa\_entregas\Relatorio_Cap17_Joao.md` na máquina do usuário.
+Verificado por `grep` que só a ocorrência de 17.5 mudou — o `^HM^` de
+17.22 (leituras patrísticas minoritárias sobre a glória) é rótulo correto
+e ficou intacto. **A gravação final no arquivo de origem depende do
+usuário salvar o arquivo entregue no lugar certo** — este repositório
+segue sem acesso de escrita a ele.
 
 **⚠️ Achado: rigor desigual entre as duas refutações da Regra Zero.** A
 refutação de 17.20-21 (ecumenismo) enumera os cinco itens explicitamente
