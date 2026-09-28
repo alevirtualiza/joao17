@@ -72,6 +72,86 @@ Jo 17 foi registrada, só as gerais do fluxo**:
   capítulo. Não há registro de que essa sentinela específica tenha sido
   conferida — é sentinela nova, proposta por este repositório, não herdada.
 
+### 1.1-B Auditoria executada em 28/09/2026 — o texto do relatório foi lido
+
+O usuário enviou `Relatorio_Cap17_Joao.md` (6 seções + notação de certeza,
+datado 11/09/2026). Isto permite fechar boa parte de §1.1 de fato, não só
+planejá-la. Resultado, item por item:
+
+**✅ Sentinela 17-A — sem violação.** O relatório não invoca P66 nem P75 em
+nenhum ponto para sustentar o texto de Jo 17 — não há qualquer alegação de
+suporte papiráceo antigo para este capítulo. A crítica textual do capítulo
+simplesmente não é tratada (nem para afirmar, nem para negar cobertura
+manuscrita) — o que é consistente com a sentinela, mas também deixa uma
+lacuna honesta: **nenhuma seção trata os testemunhos textuais de Jo 17**
+(quais unciais o cobrem, se há variante relevante). Candidato a frente de
+expansão adicional, não previsto na v1: uma nota de crítica textual do
+capítulo, ausente do relatório por decisão editorial ou por lacuna real —
+não há como saber qual das duas pelo texto sozinho.
+
+**✅ *Ut Unum Sint* — citada como deveria.** O relatório nomeia a encíclica,
+*Unitatis Redintegratio* e documentos do CMI como fonte primária da
+objeção ecumênica, e cumpre os cinco itens explicitamente rotulados
+(1)-(5) no corpo do texto — é, de fato, a aplicação mais completa e
+explícita do padrão neste relatório. Falta apenas o dado bibliográfico
+fino (edição, parágrafo) que só se confere no documento original — fora
+do alcance deste repositório.
+
+**⚠️ Achado: rótulo de certeza contraditório em si mesmo (17.5).** O
+relatório define, na sua própria escala, `HP` = *"hipótese plausível —
+sem consenso, mas **sem objeção séria conhecida**"* e `HR` = *"hipótese
+refutada — proposta exposta e, em seguida, **demonstrada improcedente
+neste relatório**"*. Mas a frase que trata as leituras unitária/sociniana,
+modalista e ariana de 17.5 diz: *"foram apresentadas com fonte e
+classificadas ^HP^; **refutadas** porque (1)... (2)... (3)..."* — no mesmo
+parágrafo em que as declara refutadas, rotula-as com o selo que por
+definição significa "sem objeção séria". Pela própria escala do relatório,
+deveriam levar `^HR^`, não `^HP^`. É exatamente o tipo de erro que o
+projeto-mãe já corrigiu antes (rótulo inflado ou mal-aplicado — ver a
+auditoria do Cap. 1 em `CLAUDE.md` §2-B) — aqui não infla a tese, mas
+descreve mal a própria refutação que o texto acabou de fazer. **Correção
+proposta:** trocar `^HP^` por `^HR^` nessa frase, no relatório do
+projeto-mãe (fora do alcance de edição deste repositório — reportar ao
+usuário).
+
+**⚠️ Achado: rigor desigual entre as duas refutações da Regra Zero.** A
+refutação de 17.20-21 (ecumenismo) enumera os cinco itens explicitamente
+no corpo do texto — "(1) fonte primária... (2) melhor versão... (3) ataque
+ao pressuposto... (4) ancoragem tripla... (5) desfecho". A refutação da
+tese de Bultmann sobre 17.3 (mito do redentor gnóstico) é substantiva e
+bem ancorada (Colpe, Schenke, Brown, Hengel, Frey), mas **não percorre os
+cinco itens de forma explícita** — não há passagem que nomeie o
+pressuposto de Bultmann como tal, nem um desfecho formalmente marcado.
+Mesmo padrão vale para a refutação das heterodoxias de 17.5: substantiva,
+mas sem a numeração explícita. Isto não é necessariamente falha — o
+padrão de cinco itens exige que os cinco **estejam presentes**, não que
+sejam rotulados — mas a inconsistência de forma entre as três refutações
+do mesmo relatório é o tipo de coisa que vale nivelar numa revisão.
+
+**✅ Confirma, em vez de contradizer, os candidatos a expansão já
+propostos em §1.3:** o gênero testamentário é tratado em termos gerais
+("Testamento de Despedida"; Gn 49; Dt 31-33; *Testamento dos XII
+Patriarcas*) sem citar nominalmente Segovia, Kurz ou qualquer monografia
+dedicada ao gênero — e o próprio relatório declara em aberto o "pano de
+fundo cultual (Yom Kipur vs. Qumran)" na síntese final. Os dois pontos já
+apontados na v1 (§5.4 antiga; frente "gênero literário" em §1.3)
+continuam sendo lacuna real, não presunção — o relatório confirma,
+não invalida.
+
+**Não verificável a partir daqui:** conferência de citação-por-citação
+(`conferir_citacoes.py`) exige o PDF original de cada fonte (Carson,
+Ridderbos, Cirilo etc.) para checar página e forma exata — este
+repositório não tem acesso a `biblioteca/`. O mesmo vale para as 25
+fontes "sem status" da poda de 21/09 (não estão listadas no relatório).
+Estes dois itens de §1.1 continuam pendentes de execução no ambiente do
+projeto-mãe.
+
+**Nota lateral, sem ação:** o relatório (datado 11/09) descreve o corpus
+como 337→316 fontes após poda mecânica. O `MEMORIA_PROJETO.md` (21-23/09)
+registra um estado posterior — poda semântica 300→176. Não é
+contradição: são medições em datas diferentes, a mais recente
+prevalecendo para qualquer citação de "tamanho do corpus atual".
+
 ### 1.2 Fechar o Estúdio — é trabalho começado e abandonado no meio
 
 Dos 60 áudios/vídeos planejados, **49 foram disparados e nenhum foi
@@ -130,8 +210,8 @@ deve ser tratado como se fosse.
   (calvinista × arminiano)** sobre 17.9-12 — confirmada pela própria Estúdio,
   que roteiriza esse debate como **duas vozes do campo confessional em
   diálogo**, não como refutação de uma pelas outra.
-- **A Sentinela 17-A** (P66/P75 não cobrem Jo 17) — proposta na v1, ainda não
-  verificada contra o texto entregue. Ver §1.1.
+- **A Sentinela 17-A** (P66/P75 não cobrem Jo 17) — proposta na v1, **agora
+  verificada contra o texto entregue: sem violação** (ver §1.1-B).
 
 ---
 
@@ -177,9 +257,10 @@ acrescentam três pontos que valem registro:
 |---|---|---|
 | 1 | `artifact list --json` no notebook `575759eb` — reconciliar os 49 disparos do Estúdio contra artefatos reais | acesso ao ambiente Windows/NotebookLM do projeto-mãe (fora deste repositório) |
 | 2 | Disparar as 11 queries do Estúdio sem registro | idem |
-| 3 | Ler `Relatorio_Cap17_Joao.md` na íntegra e rodar `conferir_citacoes.py` sobre ele | acesso ao arquivo entregue (não incluído nos uploads desta sessão — solicitar) |
-| 4 | Verificar a Sentinela 17-A contra o texto entregue | idem |
-| 5 | A partir da auditoria, decidir com o usuário **quais das quatro frentes de expansão (§1.3)** valem o investimento de uma obra dedicada, e em que ordem | resultado de 1-4 |
+| 3 | ✅ **Feito em 28/09** — `Relatorio_Cap17_Joao.md` lido na íntegra; achados em §1.1-B. `conferir_citacoes.py` propriamente dito (página exata em cada PDF) segue pendente — exige `biblioteca/` | resultado parcial obtido; conferência fina depende do ambiente do projeto-mãe |
+| 4 | ✅ **Feito em 28/09** — Sentinela 17-A verificada: sem violação (§1.1-B) | — |
+| 5 | Levar ao usuário os dois achados de §1.1-B (rótulo `^HP^`/`^HR^` em 17.5; assimetria de rigor entre as três refutações) para correção no relatório do projeto-mãe | resposta do usuário |
+| 6 | A partir da auditoria, decidir com o usuário **quais das frentes de expansão (§1.3, e a nova frente de crítica textual do capítulo aberta em §1.1-B)** valem o investimento de uma obra dedicada, e em que ordem | resultado de 1-5 |
 
 **Nota de escopo para este repositório (`joao17`):** ele não tem acesso ao
 ambiente Windows do projeto-mãe (NotebookLM, `biblioteca/`, os scripts
