@@ -378,3 +378,49 @@ deste repositório é uma **obra ampliada e dedicada**, provisoriamente
 3. **Apêndice de sentinelas e checkpoint factual**, incluindo a 17-A.
 4. **Registro do que continua sendo apenas do projeto-mãe** — Estúdio,
    notebook, poda — para não duplicar controle de estado em dois lugares.
+
+---
+
+## 5. Conferência local (Regra 11) — resultado da primeira rodada, 28/09/2026
+
+O script v1 (`conferir_citacoes_cap17_item4.ps1`) rodou contra
+`_processados_md\`, buscando as frases da resposta do NotebookLM
+**traduzidas para português** — defeito de desenho meu: os PDFs de
+origem (Morris, Ridderbos, Carson-inglês, Harris/Köstenberger, Thompson,
+Moloney) são majoritariamente em **inglês**; buscar "clara" ou "glória"
+onde o texto diz "clear" ou "glory" falha sempre, **não** porque a
+citação seja falsa. Resultado: 8 de 10 citações "não encontradas" — por
+esse motivo, não por refutação real. Mounce e Hilário: arquivo não achado
+(pode ser real ausência do corpus, ou nome de arquivo diferente —
+verificar na lista completa que o v2 gera).
+
+**As 5 ocorrências "encontradas" de Agostinho eram todas falsos
+positivos, confirmado por leitura direta:**
+- `Agostinho_ATrindade.md` (5x): "105" é número de página, nota de
+  rodapé e versículo — nunca "Tratado 105". E é *De Trinitate*, obra
+  errada (não é a coleção de *Tractates on John*).
+- `Agostinho_Tractates_NPNF107_COMPLETO.md` (31x): mesmo padrão — página,
+  nota, número de salmo, índice do fim do livro. O trecho que a busca
+  trouxe é do capítulo 12 de João, não do 17.
+- `Agostinho_Homilias_Joao_1-40_Hill.md` (9x): **estruturalmente
+  impossível conter o Tratado 105** — o nome do arquivo já diz que essa
+  edição cobre só os Tratados 1-40.
+- `Agostinho_Tractates_NPNF107_P1de2.md` (25x): a coleção completa tem
+  124 tratados; dividida ao meio, a primeira parte cobre por volta de
+  1-62 — o Tratado 105 deveria estar na segunda metade (`P2de2`).
+
+**Conclusão:** a citação "Agostinho, *Tratados sobre o Evangelho de
+João*, Tratado 105.5-8" — usada no item 4 da refutação de heterodoxias de
+17.5 — **continua não verificada**, nem confirmada nem refutada. A busca
+de v1 nunca chegou perto do lugar certo.
+
+**Corrigido no v2** (`extrair_paginas_cap17_v2.ps1`, já entregue): em vez
+de buscar frase traduzida, extrai o texto ao redor do **marcador de
+página real** mais próximo do número alegado (com janela ampliada para
+cobrir o deslocamento conhecido, `CLAUDE.md` P-04), e lista todos os
+arquivos de `_processados_md\` para resolver Mounce/Hilário. Ainda não
+rodado pelo usuário. Para Agostinho especificamente, a busca certa não é
+por número de tratado solto — é por conteúdo do capítulo 17 (a coleção
+completa organiza por capítulos do Evangelho, não por número de tratado,
+como ficou visível nos trechos extraídos) — ajuste a fazer se o v2 também
+não achar.
