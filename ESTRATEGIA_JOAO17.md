@@ -424,3 +424,36 @@ por número de tratado solto — é por conteúdo do capítulo 17 (a coleção
 completa organiza por capítulos do Evangelho, não por número de tratado,
 como ficou visível nos trechos extraídos) — ajuste a fazer se o v2 também
 não achar.
+
+**Achado de 28-29/09/2026, rodando o v2: `Carson_Joao.md` tem três
+defeitos distintos, não um.** O v2 reportou "sem marcadores de página
+reconhecíveis" para os 6 arquivos-alvo (Morris, Ridderbos, Carson,
+Harris_EGGNT, Thompson, Moloney). Inspeção direta de `Carson_Joao.md`
+revelou por quê:
+
+1. **Marcador existe, mas corrompido por codificação dupla de UTF-8** —
+   o arquivo tem `<!-- PÃ¡gina 1 -->` em vez de `<!-- Página 1 -->`
+   (mojibake: bytes UTF-8 de "á" lidos como Latin-1/CP1252 e regravados).
+   O mesmo defeito aparece no frontmatter (`tÃ­tulo`, `JOÃƒO`) — não é
+   artefato de exibição do console (outros arquivos, como os de
+   Agostinho, mostraram acentuação correta na mesma sessão), é corrupção
+   real do arquivo em disco.
+2. **Página 1 tem OCR ilegível** — `1 = oA . Se cao E Ego & Pa...` — não
+   é o aviso de grego já registrado no cabeçalho do arquivo (que fala só
+   de grego); é falha de reconhecimento geral. Ainda não verificado se
+   isso afeta só a primeira página ou o documento inteiro, incluindo as
+   páginas 554 e 27 usadas nas citações do relatório.
+3. **Intercalação de nota de rodapé** (já registrado acima) — mesmo
+   arquivo, defeito adicional e independente.
+
+**Decisão do usuário (28/09):** reconverter `Carson_Joao.md` com
+`_scripts\pdftotext_para_md.py` — a ferramenta que o próprio
+`CLAUDE.md`/`MEMORIA_PROJETO.md` já documenta como correção para a
+intercalação de nota (Regra 11-B), e que provavelmente também resolve a
+codificação dupla, por usar `pdftotext` em vez do PyMuPDF problemático.
+**Aguardando a sintaxe exata do script** (pedido ao usuário: mostrar as
+primeiras 30 linhas) antes de indicar o comando de reconversão. Até lá,
+as citações de Carson (pp. 554, 27, 557-558) permanecem **não
+verificadas**, e a mesma suspeita de codificação dupla precisa ser
+checada nos outros 5 arquivos-alvo antes de tentar de novo a extração por
+marcador.
