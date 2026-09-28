@@ -138,6 +138,33 @@ padrão de cinco itens exige que os cinco **estejam presentes**, não que
 sejam rotulados — mas a inconsistência de forma entre as três refutações
 do mesmo relatório é o tipo de coisa que vale nivelar numa revisão.
 
+✅ **Reformatado em 28/09/2026, a pedido do usuário** — as duas
+refutações (17.5 e Bultmann/17.3) foram reescritas no mesmo molde
+explícito de (1)-(5), usando **só o conteúdo já presente no relatório**,
+sem acrescentar citação ou argumento novo. Entregue como parte do
+`Relatorio_Cap17_Joao_CORRIGIDO.md` (v2).
+
+⚠️ **A reformatação não foi cosmética — expôs lacuna de conteúdo real,
+não só de forma**, exatamente o risco que se previa ao tentar nivelar o
+rigor sem inventar. Em ambas as refutações, dois dos cinco itens ficaram
+com nota de auditoria em vez de conteúdo, porque o texto original não o
+tinha:
+
+| Item | 17.5 (heterodoxias) | Bultmann (17.3) |
+|---|---|---|
+| (1) fonte primária | descreve as três posições, **não nomeia autor/obra** de nenhuma | nomeia Bultmann e a obra, mas **sem página** conferida |
+| (4) recepção patrística + consenso conservador | **ausente** — só ancoragem textual (item 4-texto) está de fato presente | idem — só ancoragem textual está presente |
+
+Isto é diferente da refutação ecumênica (17.20-21), que tem os cinco
+itens **com conteúdo real** em todos, não só com rótulo. A assimetria
+original não era só de apresentação: as duas refutações mais fracas
+**também têm menos substância** nos itens 1 e 4. Corrigir isso de
+verdade — nomear a fonte primária de cada heterodoxia, achar a página de
+Bultmann, trazer a recepção patrística e o consenso conservador por nome
+— exige consultar o corpus real (NotebookLM, `575759eb`), o que este
+repositório não pode fazer. **A reformatação entregue é honesta sobre o
+que ainda falta, não uma correção completa.**
+
 **✅ Confirma, em vez de contradizer, os candidatos a expansão já
 propostos em §1.3:** o gênero testamentário é tratado em termos gerais
 ("Testamento de Despedida"; Gn 49; Dt 31-33; *Testamento dos XII
