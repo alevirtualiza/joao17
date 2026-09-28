@@ -1,308 +1,170 @@
 # Estratégia — Pesquisa Ampla, Profunda e Detalhada sobre João 17
 
-*Elaborado em 28/09/2026, a partir dos quatro artefatos do projeto-mãe
-(`CLAUDE.md`, `CHECKPOINT_PROJETO.md`, `AQUISICOES_ESCOLAS.md`,
-`AQUISICOES_LACUNAS.md`). Este repositório (`joao17`) recorta do projeto
-"Joao-Pesquisa" **um único capítulo** — a Oração Sacerdotal — e aplica a ele,
-sem diluição, toda a metodologia já validada e testada em 46 erros e 30 lições
-registrados no diário técnico do projeto-mãe. Não se reinventa método aqui;
-herda-se o que já funcionou e se recorta o que é específico de Jo 17.*
+*v2, 28/09/2026. A v1 deste documento foi escrita a partir de quatro artefatos
+do projeto-mãe (`CLAUDE.md`, `CHECKPOINT_PROJETO.md`, `AQUISICOES_ESCOLAS.md`,
+`AQUISICOES_LACUNAS.md`) e presumia que o Capítulo 17 ainda não tinha sido
+trabalhado na Fase 2. **Essa presunção estava errada**, e cinco arquivos novos
+(`CURADORIA_FONTES_JOAO.md`, `DEEP_RESEARCHES_JOAO.md`,
+`LACUNAS_REFUTACAO.md`, `LOG_QUERIES.md`, `MEMORIA_PROJETO.md`) a corrigem.
+Esta versão não descarta a v1 — a estrutura em três blocos, as sentinelas e o
+padrão de cinco itens continuam válidos — mas reposiciona o projeto a partir
+do estado real, não do presumido.*
 
 ---
 
-## 1. Por que João 17 pede um projeto à parte, e não um capítulo entre 21
+## 0. O que mudou, e por que muda a missão deste repositório
 
-O projeto-mãe já classificou a Fase 2 (exegese por perícope) como não
-iniciada — 21 capítulos, moldes prontos, zero execuções. João 17 tem motivo
-para furar a fila:
+**João 17 já foi trabalhado, entregue e podado.** Do `MEMORIA_PROJETO.md`
+(atualizado 21-23/09/2026):
 
-1. **É o único capítulo do Evangelho que é, ele mesmo, uma unidade de gênero
-   fechada** — oração, não narrativa nem discurso dialogado. Isso muda o
-   método de leitura: precisa de literatura sobre **gênero de oração
-   sacerdotal / testamentária**, que os demais capítulos não pedem.
-2. **É o ponto de maior tráfego doutrinário do Evangelho.** Cristologia da
-   glória (17.1-5, 24), Trindade e reciprocidade Pai-Filho, eleição e
-   perseverança dos santos (17.2, 6, 9, 12), definição de vida eterna (17.3),
-   consagração pela verdade (17.17), missão (17.18), e a unidade dos crentes
-   (17.20-23) — este último o texto mais citado do Evangelho em debates
-   ecumênicos contemporâneos, dentro e fora do campo confessional que o
-   projeto-mãe adota.
-3. **O corpus já tem mais fonte dedicada a Jo 17 do que a quase qualquer outro
-   capítulo isolado** — Lloyd-Jones escreveu exposição exclusiva sobre ele, e
-   isso já está no acervo. É o capítulo onde menos se depende de aquisição
-   nova e mais se depende de leitura cuidadosa do que já se tem.
-4. **A Regra Zero (§0 do `CLAUDE.md`) tem aqui seu teste mais difícil.** A
-   leitura ecumênica/católica de 17.21-23 ("para que todos sejam um... para
-   que o mundo creia") é historicamente usada como base para eclesiologia de
-   unidade visível institucional — divergente da leitura evangélica-reformada
-   de unidade espiritual invisível. É o lugar do Evangelho onde a linha
-   editorial do projeto mais precisa de disciplina para não decretar a
-   refutação em vez de argumentá-la.
-
----
-
-## 2. Recorte textual e estrutura literária — a base de tudo o que segue
-
-João 17.1-26 divide-se, por consenso quase unânime da literatura (Calvino,
-Ridderbos, Bernard, Carson, Köstenberger, Barrett, Brown), em **três
-movimentos concêntricos**, não em versículos soltos. A exegese deve respeitar
-essa arquitetura — é o que evita o erro mais comum do gênero (comentário
-versículo a versículo que perde o arco):
-
-| Bloco | Versículos | Conteúdo | Categoria teológica dominante |
-|---|---|---|---|
-| **I — Jesus ora por si mesmo** | 17.1-5 | Pedido de glorificação mútua; vida eterna definida (17.3); glória pré-encarnação (17.5) | Cristologia, glória, pré-existência |
-| **II — Jesus ora pelos discípulos presentes** | 17.6-19 | Guarda (17.11-12, Judas), separação do mundo, santificação pela verdade (17.17), envio em missão (17.18) | Eclesiologia, perseverança, santificação |
-| **III — Jesus ora pelos crentes futuros** | 17.20-26 | Unidade dos crentes (17.20-23), visão da glória (17.24), conhecimento do Pai e amor (17.25-26) | Unidade da igreja, escatologia, Trindade |
-
-**Consequência metodológica:** o capítulo não comporta um único prompt
-exegético. Segue-se o padrão de **três sub-notebooks de trabalho ou três
-blocos de prompt** dentro de um único notebook NotebookLM — um por bloco —,
-preservando o limite de 4-5 prompts exegéticos por sessão (`CLAUDE.md` §3,
-ajustado para 5 em 09/08/2026) sem forçar leitura rasa de um capítulo com
-peso desproporcional ao número de versículos.
-
----
-
-## 3. Metodologia herdada — aplicada linha a linha
-
-Nada abaixo é novo; é a tradução do que já está em `CLAUDE.md` §2-B, §3, §4
-para o caso concreto de Jo 17.
-
-### 3.1 Regra Zero aplicada a Jo 17
-
-A objeção progressista mais forte especificamente sobre este capítulo não é
-histórico-crítica clássica, é **eclesiológica-ecumênica**: a leitura de
-17.21-23 como mandato para união institucional visível das igrejas (linha
-católico-romana pós-Vaticano II e do Conselho Mundial de Igrejas), contra a
-leitura reformada-evangélica de unidade essencialmente espiritual, manifesta
-mas não dependente de estrutura institucional única. A Regra Zero exige que
-esta seja tratada como objeção a refutar — na sua melhor forma — não como
-duas leituras igualmente válidas. Ver §5.2 abaixo para as fontes primárias
-necessárias dos dois lados.
-
-Uma segunda linha de tensão, interna ao campo conservador e não externa a
-ele, é **calvinista × arminiana/wesleyana** sobre 17.9 ("não rogo pelo mundo")
-e 17.12 (segurança dos guardados, "nenhum se perdeu, senão o filho da
-perdição") — eleição/perseverança versus livre-arbítrio e possibilidade de
-apostasia. Aqui a Regra Zero **não se aplica da mesma forma**: são duas
-posições dentro do espectro confessional que o projeto já tem instrução para
-tratar por escola (§4 abaixo), não uma objeção liberal a decretar vencida.
-Confundir os dois casos — tratar Wesley como "objeção liberal" — seria erro
-de categoria, o mesmo tipo que o projeto-mãe já registrou ao arrolar Hengel
-erroneamente entre defensores de uma tese que ele não sustenta.
-
-### 3.2 O padrão de cinco itens, por objeção
-
-Cada objeção que o capítulo abrir — ecumênica sobre 17.21-23, crítica sobre a
-autenticidade histórica da oração (Bultmann: composição joanina tardia, não
-palavras de Jesus), ou sobre o gênero (a oração como construção literária
-helenística/testamentária e não relato) — precisa cumprir os cinco itens do
-`CLAUDE.md` §2-B antes de fechar seção. Not cumprir os cinco = declarar a
-lacuna, nunca decretar.
-
-### 3.3 Sentinelas aplicáveis (das 9 do projeto-mãe)
-
-Duas das nove sentinelas gerais tocam diretamente Jo 17 e precisam entrar no
-checkpoint factual deste capítulo:
-
-- **Egō eimi** — 17.3 não usa a fórmula absoluta, mas a definição de vida
-  eterna ("conhecer... a ti, único Deus verdadeiro, e a Jesus Cristo") é o
-  ponto onde a cristologia joanina da identidade divina de Jesus se articula
-  com mais densidade doutrinária fora das fórmulas *egō eimi* propriamente
-  ditas — merece nota own, não fusão com a sentinela existente.
-- **Testemunhos textuais (P66, P75, ℵ, B, D)** — conferir cobertura: P66
-  cobre até 14.26, portanto **não cobre Jo 17**; P75 cobre até 15.8,
-  **também não cobre Jo 17** integralmente. Isso é factualmente relevante e
-  costuma ser omitido: a crítica textual de Jo 17 depende de outros
-  manuscritos (ℵ, B, e os unciais posteriores), o que enfraquece qualquer
-  alegação de suporte papiráceo antigo direto para este capítulo
-  especificamente. **Verificar isso em Metzger/NA28 antes de escrever
-  qualquer afirmação sobre o texto de Jo 17 — não presumir a partir da
-  cobertura geral de P66/P75.**
-
-Propõe-se registrar isso como **Sentinela 17-A** (específica deste projeto,
-não do projeto-mãe): *"Jo 17 está fora do alcance de P66 e P75. Nunca citar
-esses papiros para estabelecer o texto de Jo 17 especificamente."*
-
-### 3.4 As três consultas por bloco (não por capítulo inteiro)
-
-Adaptação necessária do protocolo padrão (`CLAUDE.md` §2-B): como o capítulo
-tem três blocos teologicamente distintos, a consulta de verificação
-("quem, no dossiê, sustenta o contrário?") deve ser **disparada por bloco**,
-não uma vez para o capítulo inteiro — um único disparo geral tenderia a
-recuperar só a objeção mais saliente (a ecumênica) e teria retrieval fraco
-sobre as objeções mais técnicas de 17.1-5 (pré-existência) e 17.6-19
-(perseverança).
-
----
-
-## 4. O que o corpus já tem para Jo 17 — auditoria por escola
-
-*Baseado no que `AQUISICOES_ESCOLAS.md` e `CLAUDE.md` §2-B já registram
-como estado do corpus em 28/07 e 01/08/2026. Antes de qualquer aquisição
-nova, ler esta tabela — é a aplicação da Regra 11 do projeto-mãe ("RAG para
-descobrir, disco para conferir") ao próprio planejamento.*
-
-| Escola | Fonte já no corpus, e o que ela cobre em Jo 17 | Estado |
-|---|---|---|
-| **Reformada** | **Lloyd-Jones** — exposição **dedicada** a Jo 17, já citada nominalmente em `AQUISICOES_ESCOLAS.md` linha 133 como a referência reformada do capítulo. Calvino (3 vols.), Ridderbos, Matthew Henry, Bernard (ICC) — todos cobrem o Evangelho inteiro, logo cobrem 17 | 🟢 forte |
-| **Patrística** | Crisóstomo (88 homilias, extraído — cobre 17 dentro do intervalo geral), Cirilo de Alexandria (2 vols.), Agostinho (Homilias sobre João, Hill e NPNF), Von Wahlde vol. 3 (caps. 13-21, portanto Jo 17 integralmente) | 🟢 forte, mas conferir se Crisóstomo/Cirilo de fato **comentam** 17 e não apenas o cercam — aplicar a mesma checagem que o projeto-mãe já fez com Bengel/Wesley em autoria (presença ≠ cobertura do tema) |
-| **Católica/moderna** | **Schnackenburg vol. 3** (*ai capp. 13-21*, edição italiana Paideia, já adquirida e amostrada — a amostra confirmada em `AQUISICOES_LACUNAS.md` linha 99 discute **exatamente 17.20-23**, a unidade dos crentes) | 🟢 **peça central para a objeção ecumênica** — já no acervo |
-| **Puritana** | Hutcheson (*Exposition*, integral, versículo a versículo) | 🟢 se adquirida (ver §5.3) |
-| **Pietista** | Bengel (*Gnomon*, João extraído p. 332-451 — conferir se o recorte inclui 17) | 🟡 conferir cobertura real |
-| **Wesleyana** | Wesley (*Explanatory Notes*, João extraído p. 226-294 — conferir cobertura de 17), Adam Clarke vol. 5B (integral, cobre 17) | 🟢 Clarke; 🟡 conferir Wesley |
-| **Pentecostal** | Keener (*The Spirit in the Gospels and Acts*) — Jo 17 não é o foco natural desta obra (o Paráclito está em 14-16), mas 17.17-19 (santificação, missão, envio) é ponto de contato pneumatológico possível | 🟡 conferir se o livro chega a tratar 17 ou se é preciso **declarar o silêncio** |
-| **Crítica/histórica** | Bultmann (já no corpus, 3 contagens de palavra registradas) — fonte primária da tese de composição tardia/não-histórica da oração | 🟢 necessário para cumprir item 1 do padrão de refutação sobre a objeção histórico-crítica |
-
-**Ação imediata, antes de qualquer Deep Research:** rodar em cada uma das
-fontes marcadas 🟡 uma consulta de localização simples — "o que esta obra diz
-sobre Jo 17?" — e registrar se a resposta é substantiva ou silenciosa. É o
-mesmo procedimento que o projeto-mãe já aplicou a Bengel e Wesley em autoria,
-e que já provou pegar presença sem cobertura.
-
----
-
-## 5. Lacunas específicas de Jo 17 — o que falta e por quê
-
-### 5.1 Já resolvido no projeto-mãe, herdado de graça
-
-**Schnackenburg vol. 3** — a maior lacuna católica que o projeto-mãe
-registrou (`AQUISICOES_LACUNAS.md` §4) foi suprida pela edição italiana da
-Paideia, e a amostra de verificação **é justamente o trecho de 17.20-23**.
-Isto é: a obra mais crítica para o bloco III deste capítulo específico já
-está confirmada em mãos, com uma ressalva técnica herdada — o grego sai como
-sósia latino (fonte Type1 sem ToUnicode) e **não deve ser citado em forma
-grega acentuada a partir deste PDF**; para grego usar Harris (EGGNT) ou
-Barrett, também já no acervo.
-
-### 5.2 A lacuna ecumênica — a mais urgente deste projeto, específica dele
-
-Nem `AQUISICOES_ESCOLAS.md` nem `AQUISICOES_LACUNAS.md` — escritos para o
-projeto inteiro — trazem fonte primária **do lado ecumênico/católico
-contemporâneo** que defenda a leitura institucional de 17.21-23. Isto é uma
-lacuna que só aparece ao recortar Jo 17 isoladamente; no projeto-mãe ela
-estava invisível, diluída entre 21 capítulos.
-
-Sem essa fonte, a Regra Zero e o item 1 do padrão de cinco itens (fonte
-primária localizável) **não podem ser cumpridos** para esta objeção
-específica — o capítulo teria de declarar a lacuna em vez de refutar, o que
-seria uma perda séria, dado que 17.20-23 é o texto mais citado do Evangelho
-em discurso ecumênico público.
-
-**Candidatos a levantar (dados de conhecimento do redator, não do
-corpus — conferir na aquisição, seguindo a mesma advertência que
-`AQUISICOES_LACUNAS.md` já impõe a si mesma):**
-
-| Obra | Autor | Papel |
-|---|---|---|
-| *Unitatis Redintegratio* (decreto conciliar, 1964) + comentário católico padrão | Concílio Vaticano II | fonte primária do magistério católico sobre unidade visível, citando diretamente Jo 17 |
-| *That They May Be One: A Study of Papal Doctrine* ou equivalente | a conferir | leitura católica confessional de Jo 17.21 |
-| Documentos do Conselho Mundial de Igrejas sobre unidade visível | WCC/Faith and Order | a versão ecumênica protestante-liberal, distinta da católica |
-| Resposta evangélica-reformada dedicada | candidatos: D. A. Carson (*The Farewell Discourse*), Köstenberger, ou o próprio Lloyd-Jones já no acervo | a réplica confessional — conferir se já cobre isso antes de comprar mais |
-
-**Nota de método:** esta é exatamente a situação que `AQUISICOES_LACUNAS.md`
-resolveu para o Bloco A (Gardner-Smith) — procurar primeiro em disco (Regra
-"nenhum índice prova ausência fora do próprio escopo") antes de declarar
-ausência e sair à cata. É possível que Carson ou Köstenberger, já
-mencionados no corpus geral do projeto-mãe, tratem disso — **conferir antes
-de comprar**.
-
-### 5.3 Lacunas herdadas, ainda não fechadas, que tocam Jo 17
-
-Da tabela de "Quadro de decisão" de `AQUISICOES_LACUNAS.md`:
-
-- **Neirynck** e **Jaubert** — lacunas declaradas, decisão do usuário de
-  seguir sem elas. Não tocam Jo 17 diretamente (sinóticos e cronologia da
-  paixão) — **fora do escopo deste projeto**, não repetir a tentativa aqui.
-- **Hoehner** — cronologia da vida de Cristo; toca Jo 17 apenas
-  perifericamente (datação da Última Ceia, contexto da oração). Prioridade
-  baixa para este projeto especificamente.
-- **Hutcheson** (puritano) — se ainda não convertido/subido ao notebook
-  geral, verificar estado antes de assumir cobertura na tabela do §4 acima.
-
-### 5.4 Gênero literário — a oração sacerdotal como testamento
-
-O projeto-mãe já identificou, para o cap. 6 (discurso de despedida, Jo 14-16),
-a lacuna de **Segovia** (*The Farewell of the Word*) e **Kurz** (*Farewell
-Addresses in the New Testament*, tratando do gênero testamentário judaico).
-Jo 17 é a **conclusão** do discurso de despedida e compartilha o mesmo
-problema de gênero — na verdade, a oração sacerdotal é justamente o ponto
-onde o gênero "testamento" se completa com uma oração de intercessão, paralela
-a Moisés (Dt 32-33), aos testamentos dos patriarcas intertestamentários, e à
-liturgia sacerdotal judaica (Yom Kipur). **Esta é uma lacuna que Jo 17 herda
-do cap. 6 e agrava**: nenhuma das duas obras (Segovia, Kurz) é dedicada à
-oração especificamente. Considerar, adicionalmente:
-
-| Obra | Papel |
+| Item | Estado real, medido |
 |---|---|
-| David Aune ou similar sobre gênero de oração antiga | pano de fundo greco-romano e judaico de oração solene |
-| Literatura sobre *Yom Kipur* e o sumo sacerdote (origem do nome tradicional "Oração Sacerdotal", cunhado por David Chytraeus no séc. XVI, não pelo texto) | conferir se o corpus tem algo sobre a tipologia sacerdotal levítica aplicada a Jo 17 — provável **lacuna a declarar**, não presumir |
+| Notebook | `Joao - Cap17 (Oração Sacerdotal)` — `575759eb-237e-44b4-8c72-092eb20ba656` |
+| Relatório | **Entregue em 11/09/2026** — `_entregas/Relatorio_Cap17_Joao.md/.docx/.pdf` |
+| Corpus | Chegou a **327 fontes** (300 `ready`), depois **poda semântica em 21/09**: 300 → **176** (125 `ISOLADA` removidas, ficaram 25 sem status) |
+| Deep Research | **9 de 10 rodadas** executadas (5 lacunas × 2 rodadas) |
+| Triagem semântica | R1/R2/R3 rodados **do zero em 21/09** (corrigindo a nota anterior, de 12/09, que dizia "nunca rodou") — ledger **36/36** completo |
+| Refutações já registradas no relatório entregue | **(a)** heterodoxias sobre 17.5 — unitarismo, modalismo, arianismo — pelo padrão de 5 itens; **(b)** uso ecumênico-institucional de 17.21 (citando nominalmente ***Ut Unum Sint***) — também pelo padrão de 5 itens completo |
+| Estúdio (áudio/vídeo) | Campanha de 60 queries planejadas (5 destaques × 6 personas × 2 formatos); **49 disparadas, 0 confirmadas como artefato real** (log gerado em modo offline, sem `artifact list`); **11 nunca chegaram a ser disparadas** |
+
+Isto muda a pergunta que este repositório responde. **Não é mais "como
+executar a exegese de João 17 pela primeira vez"** — isso já aconteceu, e com
+qualidade registrada (o par de refutações de 17.5 e 17.21 é descrito no
+`MEMORIA_PROJETO.md` como *"a mais completa aplicação da Regra Zero do
+projeto"*, dito do Cap. 20, mas o Cap. 17 é citado com o mesmo padrão de
+detalhe). **A pergunta correta é: o que um capítulo entre 21, sob o teto de
+formato da Fase 2, não pôde comportar — e que uma obra dedicada,
+exclusivamente sobre João 17, pode?**
+
+Um capítulo de série tem: um relatório de poucas páginas, um corpus podado
+para caber ao lado de outros 20 capítulos, cinco prompts exegéticos, e uma
+Estúdio que sequer terminou de disparar. Este projeto (`joao17`) tem a
+liberdade que a série não tem — o espaço para tratar o texto com a extensão,
+polêmica e detalhe que ele pede, sem competir por atenção com Nicodemos ou o
+Bom Pastor.
 
 ---
 
-## 6. Plano de execução
+## 1. As quatro tarefas concretas que decorrem disso
 
-### 6.1 Notebook dedicado
+### 1.1 Auditar o que já foi entregue (prioridade imediata, é a mais barata)
 
-Criar `Joao - Cap 17 - Oracao Sacerdotal`, seguindo `montar_notebook_capitulo.ps1`
-do projeto-mãe (herdado, não reescrito). Corpus base: todas as fontes do §4
-marcadas 🟢, mais os candidatos do §5.2 assim que adquiridos. Meta: ~55 fontes
-de corpus + Deep Research dirigida (Pro: até 300/notebook, mas a curadoria
-R1-R4 do `_triagem_dr/` do projeto-mãe deve ser aplicada integralmente —
-nenhuma DR entra sem triagem).
+Antes de escrever uma linha nova, ler o `Relatorio_Cap17_Joao.md` já entregue
+e aplicar-lhe as mesmas checagens que o projeto-mãe já provou serem
+necessárias em outros capítulos — porque **nenhuma checagem específica de
+Jo 17 foi registrada, só as gerais do fluxo**:
 
-### 6.2 Sequência de prompts exegéticos (respeitando o limite de 5/sessão)
+- **Conferir citação por citação** (`conferir_citacoes.py`), como foi feito
+  para os 121 da Fase 1 — não há registro de que a Fase 2 tenha rodado o
+  mesmo conferidor sobre os relatórios de capítulo.
+- **Verificar se as 25 fontes "sem status"** que sobraram da poda de 21/09
+  (nem `ISOLADA` nem `CONFLITO`) foram lidas e usadas, ou são passageiras
+  silenciosas — a mesma checagem de presença-sem-cobertura que a v1 já exigia
+  para Bengel e Wesley.
+- **Confirmar a fonte primária por trás de *Ut Unum Sint*** citada no
+  relatório: é encíclica real (João Paulo II, 1995) sobre compromisso
+  ecumênico — mas conferir **edição, parágrafo exato citado, e se o
+  relatório cita o documento em fonte primária ou por resumo de terceiro**
+  (a Regra 12 do projeto-mãe: nome de obra não é evidência de que foi lida).
+- **Rodar a Sentinela 17-A proposta na v1** (P66 cobre só até 14.26; P75 só
+  até 15.8 — nenhum dos dois cobre Jo 17) contra o texto entregue: confirmar
+  que nenhuma alegação de suporte papiráceo antigo foi feita para este
+  capítulo. Não há registro de que essa sentinela específica tenha sido
+  conferida — é sentinela nova, proposta por este repositório, não herdada.
 
-| Sessão | Bloco | Prompts |
+### 1.2 Fechar o Estúdio — é trabalho começado e abandonado no meio
+
+Dos 60 áudios/vídeos planejados, **49 foram disparados e nenhum foi
+confirmado**, porque o log de 27/09 foi gerado em modo offline (sem
+`artifact list`). Isto é exatamente o tipo de situação que o
+`MEMORIA_PROJETO.md` já alertou ser enganosa: *"nunca aceitar `rc!=0` de
+`generate` como falha — sempre conferir por `artifact list --json`"*. Antes
+de decidir se os 49 precisam ser re-disparados, **conferir via `artifact
+list`** quantos de fato existem — pode ser que boa parte já esteja pronta e
+só não tenha sido reconciliada.
+
+As **11 sem registro de disparo** (dos 60 planejados) precisam ser
+localizadas no script `fase2-capitulos/cap17-oracao-sacerdotal/estudio_cap17.py`
+e disparadas.
+
+### 1.3 Ir além do que o formato de capítulo permitiu
+
+Com a auditoria feita, a contribuição real deste projeto dedicado é
+**aprofundar além do que um relatório de capítulo-entre-21 comporta**. Onde a
+v1 já mapeava isso corretamente (estrutura em três blocos, sentinelas,
+escolas de interpretação), a diferença agora é que não se está mais
+preenchendo lacuna nenhuma — está-se **expandindo um trabalho já bem-feito em
+formato reduzido**. As frentes concretas de expansão, cruzando o que a
+`CURADORIA_FONTES_JOAO.md` já cataloga:
+
+| Frente de expansão | Por que o capítulo-padrão não comportou | Fonte já disponível para isso |
 |---|---|---|
-| 1 | Bloco I (17.1-5) | (a) exegética — glória, vida eterna, pré-existência; (b) verificação — quem discorda da leitura de pré-existência real em 17.5; (c) refutação dirigida se a verificação abrir objeção |
-| 2 | Bloco II (17.6-19) | (a) exegética — guarda dos discípulos, Judas, santificação, missão; (b) verificação — tensão calvinista/arminiana sobre 17.9, 12; (c) refutação/exposição das duas leituras confessionais **sem Regra Zero** (é debate intra-conservador — ver §3.1) |
-| 3 | Bloco III (17.20-26) | (a) exegética — unidade, glória futura, conhecimento e amor; (b) verificação — a leitura ecumênica/católica na sua melhor forma (depende de §5.2 resolvido); (c) refutação plena pelos cinco itens |
-| 4 | Transversal | (a) checkpoint factual — sentinelas 17-A e egō eimi/vida eterna; (b) consulta sobre gênero (testamento/oração sacerdotal), declarando lacuna se §5.4 não resolvido |
-| 5 | Síntese do capítulo | redação final, auditoria de citações, rótulos de certeza revisados |
+| **Recepção patrística plena de Jo 17** | 5 prompts exegéticos por capítulo não dão espaço para percorrer Orígenes, Crisóstomo, Cirilo e Agostinho versículo a versículo sobre a Oração; um capítulo-padrão cita, não expõe | Orígenes, Agostinho (*Tractates*), Cirilo (2 vols.), ACCS 11-21 — todos Tier A/S já no corpus geral |
+| **Gênero literário da oração sacerdotal em profundidade** | é tema transversal (herdado do Cap. 6, discurso de despedida) que nenhum capítulo isolado pode tratar por inteiro | Segovia, Kurz (lacunas já identificadas para o Cap. 6 em `AQUISICOES_LACUNAS.md`) — aqui podem finalmente receber tratamento completo |
+| **O debate calvinista-arminiano sobre 17.9-12** | a Estúdio já roteirizou isso como debate de personas (query D1P4 acima, calvinista × arminiano sobre 17.5) mas o relatório de capítulo não tem espaço para desenvolver as duas posições com igual profundidade | Ridderbos/Calvino (reformado) vs. Wesley/Clarke (arminiano-wesleyano) — ambos no corpus |
+| **A tradição expositiva reformada dedicada a Jo 17** | Lloyd-Jones (*Tier C* na `CURADORIA_FONTES_JOAO.md`, mas nominalmente marcado como "**excelente para o cap. 17**") é a única obra do corpus **inteiramente dedicada** a este capítulo, e um relatório padrão não a esgota | Lloyd-Jones, *João 17* — já no acervo |
+| **Teologia trinitária da reciprocidade Pai-Filho** | 17.1-5, 17.21-23 e 17.24-26 sustentam boa parte da doutrina histórica de *perichoresis*; um capítulo de série não tem espaço para a história dogmática (Niceia, Constantinopla, disputas cristológicas patrísticas) | Cirilo de Alexandria (anti-arianismo), Agostinho (*De Trinitate* — já no acervo geral do projeto-mãe) |
 
-### 6.3 Deep Research — pauta dirigida (antes de qualquer DR genérica)
+### 1.4 Verificar o que a Pauta 1 de refutação (gênero/feminismo) não cobriu
 
-Toda DR deste capítulo abre, como manda `CLAUDE.md` §2-B, com *"quais
-objeções progressistas este texto atrai?"* — aqui, concretamente:
-
-1. A leitura ecumênica institucional de 17.21-23, na sua melhor forma
-   católica **e** na sua melhor forma conciliar-protestante (são duas, não
-   uma — WCC e Roma divergem entre si também).
-2. A tese crítica de que a oração é composição joanina tardia retroprojetada
-   na boca de Jesus (Bultmann e herdeiros) — contra a historicidade da cena.
-3. Leituras que dissolvem a pré-existência de 17.5 em categoria mítica ou
-   poética, não metafísica real.
-
-### 6.4 Auditoria antes de fechar
-
-Aplicar integralmente a Definition of Done do projeto-mãe (`CHECKPOINT_PROJETO.md`
-§8.1): estrutura tese→objeções→resposta, rótulos de certeza em toda
-afirmação, consulta de verificação por bloco (não só por capítulo),
-checkpoint factual com as sentinelas aplicáveis + Sentinela 17-A, nenhuma
-atribuição de ocorrência única, citações conferidas.
+`LACUNAS_REFUTACAO.md` registra a Pauta 1 (hermenêutica feminista) como
+incidindo em Jo 2.4, 4, 11.27 e 20.11-18 — **não em Jo 17**. Isto é
+verificação negativa útil: não há objeção de gênero pendente específica
+deste capítulo, e não se deve importar uma artificialmente. Onde Jo 17 toca
+o mesmo eixo é indiretamente, pela intercessão sacerdotal e a tipologia de
+Cristo como sumo sacerdote (papel tradicionalmente masculino no AT) — mas
+isso é ponto de **cristologia**, não de objeção de gênero ao texto, e não
+deve ser tratado como se fosse.
 
 ---
 
-## 7. Riscos específicos deste recorte
+## 2. O que a v1 já estabeleceu e continua valendo, sem alteração
 
-| Risco | Por que é específico de Jo 17 | Mitigação |
+- **A estrutura em três blocos concêntricos** (17.1-5 / 17.6-19 / 17.20-26) —
+  confirmada, de resto, pela própria Estúdio já roteirizada: as queries D1
+  giram em torno de 17.1-5 exatamente como a v1 previu.
+- **A Regra Zero aplicada à leitura ecumênica de 17.21-23** — confirmada como
+  o eixo mais sensível do capítulo: é justamente o que o relatório já
+  entregue tratou como refutação de destaque (§0 acima).
+- **A distinção entre objeção externa (ecumênica) e debate interno
+  (calvinista × arminiano)** sobre 17.9-12 — confirmada pela própria Estúdio,
+  que roteiriza esse debate como **duas vozes do campo confessional em
+  diálogo**, não como refutação de uma pelas outra.
+- **A Sentinela 17-A** (P66/P75 não cobrem Jo 17) — proposta na v1, ainda não
+  verificada contra o texto entregue. Ver §1.1.
+
+---
+
+## 3. Plano de execução revisado
+
+| Ordem | Tarefa | Depende de |
 |---|---|---|
-| **Decretar a refutação ecumênica em vez de argumentá-la**, por falta da fonte primária do lado institucional | É o texto mais carregado ideologicamente do Evangelho e o mais fácil de responder por decreto | Não escrever a seção antes de §5.2 resolvido; declarar lacuna se a aquisição não vier a tempo |
-| **Confundir debate calvinista-arminiano com objeção liberal** (ver §3.1) | Jo 17.9-12 é terreno de disputa confessional interna, não externa | Tratar por escola (§4), não pela Regra Zero |
-| **Citar P66/P75 para o texto de Jo 17** | erro fatual fácil de cometer por generalização da cobertura desses papiros no Evangelho todo | Sentinela 17-A |
-| **Presumir cobertura de Bengel/Wesley/Keener em Jo 17 sem checagem** | o projeto-mãe já documentou esse erro exato para autoria (presença ≠ cobertura) | Consulta de localização simples em cada fonte 🟡 do §4, antes de redigir |
-| **Fragmentar o capítulo em 26 versículos isolados**, perdendo a arquitetura dos três blocos concêntricos | é o erro mais comum do gênero comentário | Seguir §2 como espinha estrutural obrigatória do relatório final |
+| 1 | `artifact list --json` no notebook `575759eb` — reconciliar os 49 disparos do Estúdio contra artefatos reais | acesso ao ambiente Windows/NotebookLM do projeto-mãe (fora deste repositório) |
+| 2 | Disparar as 11 queries do Estúdio sem registro | idem |
+| 3 | Ler `Relatorio_Cap17_Joao.md` na íntegra e rodar `conferir_citacoes.py` sobre ele | acesso ao arquivo entregue (não incluído nos uploads desta sessão — solicitar) |
+| 4 | Verificar a Sentinela 17-A contra o texto entregue | idem |
+| 5 | A partir da auditoria, decidir com o usuário **quais das quatro frentes de expansão (§1.3)** valem o investimento de uma obra dedicada, e em que ordem | resultado de 1-4 |
+
+**Nota de escopo para este repositório (`joao17`):** ele não tem acesso ao
+ambiente Windows do projeto-mãe (NotebookLM, `biblioteca/`, os scripts
+PowerShell) — é um ambiente cloud isolado. O que pode ser feito aqui é
+**planejamento, auditoria de texto já fornecido, e redação** — não execução
+de `notebooklm` ou disparo de Estúdio. Qualquer item acima que exija esses
+recursos precisa ser executado na janela do projeto-mãe e trazido de volta
+como artefato (relatório, log) para leitura e auditoria aqui.
 
 ---
 
-## 8. Entregável
+## 4. Entregável revisado
 
-`Relatorio_Cap17_Joao.md/.docx/.pdf` — estrutura: introdução ao gênero e
-recorte (§2 e §5.4) → Bloco I → Bloco II → Bloco III → síntese teológica
-(cristologia, eclesiologia, unidade) → apêndice de sentinelas e checkpoint
-factual. Alimenta depois, sem decidir nada de novo, o notebook de síntese
-geral do projeto-mãe (`CLAUDE.md` §1.2), onde a coerência com os capítulos 1
-(prólogo — pré-existência), 6 (discurso de despedida — gênero) e 10
-(cristologia geral) deve ser verificada por contradição, não reaberta.
+Não mais um único `Relatorio_Cap17_Joao.md` — esse já existe. O entregável
+deste repositório é uma **obra ampliada e dedicada**, provisoriamente
+`Joao17_Estudo_Ampliado.md`, estruturada como:
+
+1. **Auditoria do relatório existente** (§1.1) — correções, se houver.
+2. **Os três blocos exegéticos**, cada um agora com o espaço que a série não
+   deu: patrística plena, debate calvinista-arminiano nas duas vozes,
+   gênero da oração sacerdotal, teologia trinitária da reciprocidade.
+3. **Apêndice de sentinelas e checkpoint factual**, incluindo a 17-A.
+4. **Registro do que continua sendo apenas do projeto-mãe** — Estúdio,
+   notebook, poda — para não duplicar controle de estado em dois lugares.
