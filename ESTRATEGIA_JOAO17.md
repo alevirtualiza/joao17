@@ -500,3 +500,39 @@ conferência em disco**, pelo mesmo motivo original (arquivos sem
 marcador de página reconhecível, possivelmente pelo mesmo defeito de
 codificação dupla que afetava Carson). Reconvertê-los um a um segue o
 mesmo roteiro que resolveu Carson.
+
+## 7. Morris e Ridderbos conferidos — 30/09/2026: o achado mais sério até aqui
+
+Reconvertidos com a mesma sintaxe (um bug próprio corrigido no meio do
+caminho: a função do script capturava a saída do `python` junto com o
+caminho do arquivo via `Tee-Object`, poluindo o retorno — corrigido
+rodando a extração à parte). Resultado da conferência por leitura direta
+de 5 citações (Morris ×2, Ridderbos ×3):
+
+| Citação | Resultado |
+|---|---|
+| Morris, p. 643 (17.5, pré-existência) | ✅ **Confirmado quase ao pé da letra** — "There is a clear assertion of Christ's pre-existence here..." |
+| Morris, p. 138 n. 191 (Bultmann/Nag Hammadi) | ❌ **Não confirmado, página inteiramente errada** — conteúdo real é sobre João Batista/Elias, nada de Bultmann |
+| Ridderbos, p. 547 (17.5, glória preexistente) | ❌ **Não confirmado, capítulo errado** — a página é exegese de João 15, não 17 |
+| Ridderbos, pp. 12-14 (Bultmann) | ⚠️ **Mal caracterizado, quase o oposto** — Bultmann é citado como modelo metodológico que Ridderbos segue, não como alvo de refutação |
+| Ridderbos, p. 95 (Bultmann) | ❌ **Não confirmado** — conteúdo é sobre João 1 (João Batista), sem relação com Bultmann |
+
+**Taxa agregada até agora, contando também as 3 de Carson: 3 confirmadas
+de 8 checadas — pouco mais de 1 em 3.** Isso muda o peso que qualquer
+citação de página **desta lista de fontes ainda não conferida** deveria
+receber — Mounce, Harris/Köstenberger (nos dois pontos em que aparece),
+Thompson, Moloney e Rainbow precisam ser tratados como **não
+verificados**, não como fato, até passarem pelo mesmo processo.
+
+Reescrevi os dois blocos do relatório (v6, entregue) refletindo isso —
+inclusive nomeando explicitamente a taxa de acerto agregada como razão
+para desconfiar do que ainda não foi conferido, em vez de deixar a
+impressão de que só as fontes já checadas importam.
+
+**Padrão que emerge, útil para o resto da conferência:** os erros não
+são aleatórios — nos três casos "não confirmados", a página citada tem
+conteúdo de **outro capítulo do livro inteiro** (João 1 ou João 15, não
+João 17), o que sugere que o RAG às vezes cita a página certa **de um
+tema relacionado tratado em outro lugar do mesmo livro**, não uma
+invenção pura. Vale, ao conferir os próximos, checar também ±0-2
+capítulos de distância antes de declarar "não encontrado" de vez.
