@@ -536,3 +536,17 @@ João 17), o que sugere que o RAG às vezes cita a página certa **de um
 tema relacionado tratado em outro lugar do mesmo livro**, não uma
 invenção pura. Vale, ao conferir os próximos, checar também ±0-2
 capítulos de distância antes de declarar "não encontrado" de vez.
+
+## 8. Cópia completa do projeto-mãe — 30/09/2026
+
+A pedido do usuário, todo o `Joao-Pesquisa` foi copiado para
+`C:\Users\admintrt9a\Projetos\JOAO17`, via `robocopy` (script único que
+checa espaço, fecha o Firefox — não mata `python*`, por causa do alerta
+já registrado no próprio `MEMORIA_PROJETO.md` contra encerrar processo
+por regex —, copia, e confere por tamanho e contagem de arquivos, não só
+pelo código de saída do robocopy). **Verificado: 2.647 arquivos, 4,82
+GB, origem e destino idênticos.** A partir de agora, `Projetos\JOAO17` é
+uma cópia local completa e íntegra, independente de `Documents\
+Joao-Pesquisa` — útil como backup e como espaço de trabalho isolado para
+o aprofundamento de Jo 17 sem risco de interferir no projeto-mãe em
+andamento.
