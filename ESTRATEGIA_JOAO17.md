@@ -457,3 +457,46 @@ as citações de Carson (pp. 554, 27, 557-558) permanecem **não
 verificadas**, e a mesma suspeita de codificação dupla precisa ser
 checada nos outros 5 arquivos-alvo antes de tentar de novo a extração por
 marcador.
+
+## 6. Reconversão e conferência de Carson — concluída em 29-30/09/2026
+
+A sintaxe real do script era `pdftotext_para_md.py pdf saida --titulo
+TITULO --autor AUTOR` (dois posicionais + duas flags obrigatórias que eu
+não previ nas quatro tentativas automáticas). O PDF certo também exigiu
+correção: a primeira busca automática achou por engano *Father, Son and
+Spirit* (Köstenberger, Swain **e** Carson) em vez do comentário solo de
+Carson sobre João — mesmo tipo de erro de casamento por nome que o
+projeto-mãe já documentou (Regra 12). Reconvertido com sucesso: 687
+páginas, 364.667 palavras.
+
+**Resultado da conferência real, por leitura direta do texto (não mais
+busca de string):**
+
+| Citação | Resultado |
+|---|---|
+| Carson, pp. 557-558 (matriz veterotestamentária de "conhecer", item 4 de Bultmann/17.3) | ✅ **Confirmado ao pé da letra** — Jr 31.34, Os 4.6, Hc 2.14, Pv 3.6, Dt 30.20 aparecem literalmente |
+| Carson, p. 27 ("refutação do mito gnóstico de Bultmann") | ❌ **Não confirmado como caracterizado** — pp. 26-28 são exposição histórico-descritiva do gnosticismo antigo (Valentino, Herácleo), não uma refutação argumentada da cronologia de Bultmann. Pode existir em página não coberta pela janela lida |
+| Carson, p. 554 ("sintaxe de *para* + dativo", item 4 de 17.5) | ❌ **Não confirmado nesta página** — p. 554 trata da estrutura do capítulo, não da sintaxe do v. 5. A exegese real do v. 5 está na p. 558, que afirma a pré-existência real (tese correta) mas **sem o argumento gramatical específico** que a citação atribuía a Carson nessa página |
+
+**Consequência para o relatório:** reescrevi os dois trechos (v5,
+entregue) para refletir isso com precisão — mantendo o que é verdadeiro
+(Carson afirma pré-existência real em 17.5; a matriz veterotestamentária
+em Bultmann/17.3 está confirmada) e marcando honestamente o que não se
+sustenta como antes descrito, em vez de manter uma citação de página
+errada.
+
+**O que isso ensina sobre o método:** de três citações de Carson
+verificadas por leitura direta, **uma bateu exatamente, uma bateu
+tematicamente mas não no ponto técnico, e uma não bateu de jeito
+nenhum.** Confirma exatamente o motivo pelo qual o projeto exige "RAG
+para descobrir, disco para conferir" — a resposta do NotebookLM sobre o
+dossiê é plausível o bastante para não ser questionada sem essa
+conferência, e ainda assim erra 2 de 3 vezes neste caso.
+
+**Pendência que resta:** os outros 6 autores citados no item 4 (Morris,
+Ridderbos, Mounce, Harris/Köstenberger, Thompson, Moloney) — e os 4
+patrísticos (Cirilo, Atanásio, Agostinho, Hilário) — continuam **sem
+conferência em disco**, pelo mesmo motivo original (arquivos sem
+marcador de página reconhecível, possivelmente pelo mesmo defeito de
+codificação dupla que afetava Carson). Reconvertê-los um a um segue o
+mesmo roteiro que resolveu Carson.
